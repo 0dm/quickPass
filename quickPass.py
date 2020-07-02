@@ -15,7 +15,9 @@ def generatePass(i):
          text = "Copy [" + str(i) + "]",
          width = 25,
          height = 5,
-         command = lambda:[pyperclip.copy(passgen),msg.config(text = "Copied: " + passgen), copy.destroy()]
+         command = lambda:[pyperclip.copy(passgen),
+                           msg.config(text = "Copied: " + passgen),
+                           copy.destroy()]
     )
     copy.pack()
 
@@ -47,6 +49,7 @@ height = window.winfo_height()
 x = (window.winfo_screenwidth() // 2) - (width // 2)
 y = (window.winfo_screenheight() // 2) - (height // 2)
 window.geometry('+%d+%d'%(x,y))
+
 # Global label for easy changes later
 msg = tk.Label(text="...")
 msg.pack()
