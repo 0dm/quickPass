@@ -55,6 +55,6 @@ window.geometry('+%d+%d' % (x, y))
 # Global label for easy changes later
 
 msg = tk.Label(text='...')
-msg.pack()
+msg.pack() 
 setupForm()
 window.mainloop()
