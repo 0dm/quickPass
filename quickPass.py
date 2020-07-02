@@ -5,7 +5,7 @@ import random as rand
 import pyperclip
 i = 0
 
-# Outputs string with random characters and button to copy
+# Output string with random characters and button to copy
 def generatePass(i):
     chars = s.ascii_uppercase + s.ascii_lowercase + s.digits + s.punctuation 
     length = 8
@@ -19,7 +19,7 @@ def generatePass(i):
     )
     copy.pack()
 
-# Assigns number to copy button
+# Assign number to copy button
 def setupPass():
     global i
     i = i + 1
@@ -36,7 +36,7 @@ def setupForm():
   )
   action.pack()
 
-# Sets up window
+# Set up window
 window = tk.Tk()
 window.title("quickPass")
 window.update_idletasks()
