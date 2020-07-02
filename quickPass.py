@@ -54,5 +54,5 @@ window.geometry('+%d+%d'%(x,y))
 msg = tk.Label(text="...")
 msg.pack()
 setupForm()
-
+window.mainloop()
 
